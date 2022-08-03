@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Acquaintance with NikitaCat</h1>
+        <p id="description">Thank you for taking time to tell us how you found out about NikitaCat</p>
+    </header>
+    <form id="survey-form">
+        <div class="block-enter">
+            <label id="name-label">Name</label>
+            <input id="name" type="text" required placeholder="Enter your name" class="inp">
+        </div>
+        <div class="block-enter">
+            <label id="email-label">Email</label>
+            <input id="email" type="email" required placeholder="Enter your email" class="inp">  <! add error!>
+        </div>
+        <div class="block-enter">
+            <label id="number-label">Age (optional)</label>
+            <input type="number" id="number" min="10" max="100" placeholder="Enter your age" class="inp">
+        </div>
+        <div class="block-enter">
+            <label>Which option best describes your current role?</label>
+            <select required id="dropdown">
+                <option disabled selected value>Select corrent role</option>
+                <option value="friend">Friend</option>
+                <option value="hater">Hater</option>
+                <option value="not-familiar">Not familiar</option>
+                <option value="employer">Еmployer</option>
+            </select>
+        </div>
+        <div class="block-enter">
+            <p>What are you doing</p>
+            <label for=""><input type="checkbox" value="Student" >Student</label>
+            <label for=""><input type="checkbox" value="Full Time job">Full Time job</label>
+            <label for=""><input type="checkbox" value="Prefer not to say">Prefer not to say</label>
+            <label for=""><input type="checkbox" value="Coding">Coding</label>
+            <label for=""><input type="checkbox" required checked value="Suck some dicks">Suck some dicks</label>
+            <label for=""><input type="checkbox" Other value="Other">Other</label>
+        </div>
+        <div class="block-enter">
+            <label>Why do you love NikitaCat</label>
+            <select required>
+                <option disabled selected value>Select corrent answer</option>
+                <option value="friend">For his big heart</option>
+                <option value="jokes">For his jokes</option>
+                <option value="not-familiar">I am gay</option>
+                <option value="employer">For his mind</option>
+            </select>
+        </div>
+        <div class="block-enter">
+            <p>How much are you willing to donate for NikitaCat</p>
+            <label for=""><input type="radio" name="donate" value="donate100" checked >More 100$</label>
+            <label for=""><input type="radio" name="donate" value="donate10">More 10$</label>
+            <label for=""><input type="radio" name="donate" value="donate0">I`m a fucking dirty monkey</label>
+        </div>
+        <div class="block-enter">
+            <label for="check_label">Tell us about your love for NikitaCat</label>
+           
+            <textarea class="textar" name="about-your-love" id="text-area" cols="30" rows="10" placeholder="Write about your love...."></textarea>
+        </div>
+        <div class="block-enter">
+        <input   class="submit" type="submit" value="Submit" id="submit"/>
+        </div>
+    </form>
+</body>
+</html>
